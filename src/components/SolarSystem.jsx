@@ -6,8 +6,6 @@ import Planets from '../data/planets';
 
 class SolarSystem extends Component {
   render() {
-    // const { allPlanets } = this.props;
-    // console.log(allPlanets);
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
@@ -32,5 +30,3 @@ SolarSystem.propTypes = {
 }.isRequired;
 
 export default SolarSystem;
-
-// allPlanets.map((eachPlanet) => <PlanetCard key={ eachPlanet.name: { planetName } eachPlanet.image: { planetImage } }
