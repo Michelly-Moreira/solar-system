@@ -5,6 +5,7 @@ import Title from './components/Title';
 import Missions from './components/Missions';
 import MissionCard from './components/MissionCard';
 import PlanetCard from './components/PlanetCard';
+import Planets from './data/planets';
 
 class App extends React.Component {
   render() {
