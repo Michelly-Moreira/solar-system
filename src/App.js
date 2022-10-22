@@ -4,8 +4,8 @@ import SolarSystem from './components/SolarSystem';
 import Title from './components/Title';
 import Missions from './components/Missions';
 import MissionCard from './components/MissionCard';
-import PlanetCard from './components/PlanetCard';
-// import Planets from './data/planets';
+import PlanetCard from './components/PlanetCard'; // retirar
+import Planets from './data/planets';
 
 class App extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class App extends React.Component {
       <>
         <Header />
         <Title />
-        <SolarSystem />
+        <SolarSystem allPlanets={ Planets } />
         <Missions />
         <MissionCard />
         <PlanetCard />
@@ -21,5 +21,6 @@ class App extends React.Component {
     );
   }
 }
+// linha 19 retirar planetName={ Planets.name } planetImage={ Planets.image }
 
 export default App;
