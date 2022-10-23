@@ -6,6 +6,7 @@ import Missions from './components/Missions';
 import MissionCard from './components/MissionCard';
 import PlanetCard from './components/PlanetCard'; // retirar
 import Planets from './data/planets';
+import allMissions from './data/missions';
 
 class App extends React.Component {
   render() {
@@ -14,13 +15,12 @@ class App extends React.Component {
         <Header />
         <Title />
         <SolarSystem allPlanets={ Planets } />
-        <Missions />
+        <Missions Missions={ allMissions } />
         <MissionCard />
         <PlanetCard />
       </>
     );
   }
 }
-// linha 19 retirar planetName={ Planets.name } planetImage={ Planets.image }
 
 export default App;
