@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import MissionCard from './MissionCard';
+import allMissions from '../data/missions';
 
 class Missions extends Component {
   render() {
@@ -12,7 +13,10 @@ class Missions extends Component {
           {allMissions.map((eachMission) => (
             <MissionCard
               key={ eachMission.name }
-              dataMission={ eachMission }
+              name={ eachMission.name }
+              year={ eachMission.year }
+              country={ eachMission.country }
+              destination={ eachMission.destination }
             />
           ))}
         </ul>
